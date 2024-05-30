@@ -62,7 +62,7 @@ public class GroupChatServer
 			cliThreads.add(groupMembers);
 			for (int i = 0; i < cliThreads.size(); i++) {
 				if (!clientName.equals(cliThreads.get(i).clientName)) {
-					cliThreads.get(i).toSockWriter.println("SERVER: "+clientName+" has joined the chat");
+					cliThreads.get(i).toSockWriter.println("~"+clientName+"~ has joined the chat");
 				}
 			}
 

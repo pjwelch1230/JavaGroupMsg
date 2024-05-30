@@ -80,6 +80,7 @@ public class GroupChatClient implements Runnable
 	public static void main(String args[])
 	{	
 		// Client needs server's contact information and user name
+		// <host> is the network name of the host
 		if (args.length != 3) {
 			System.out.println("Usage: java GroupChatClient <host> <port> <name>");
 			System.exit(1);
